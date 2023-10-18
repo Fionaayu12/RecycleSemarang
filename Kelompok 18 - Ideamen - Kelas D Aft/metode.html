@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Recycle</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <nav>
+    <div class="menu-icon"><span class="fas fa-bars"></span></div>
+    <div class="logo">Ideamen</div>
+    <div class="nav-items">
+      <li><a href="index.html">Home</a></li>
+            <li><a href="jual-sampah.html">Sell</a></li>
+            <li><a href="metode.html">Method</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="Kontak.html">Contact Us</a></li>
+            <li><a href="login.html">Sign Up </a></li>
+    </div>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <a href="troli.html"><i class='bx bxs-cart-alt' style="font-size: x-large; color: white;"></i></a>
+  </nav>
+
+  <main class="">
+    <div class="m-5 d-flex justify-content-center m-3">
+      <form class="d-flex" role="search">
+        <input style="width: 400px;" class="form-control me-2" type="search" placeholder="Cari Barang"
+          aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Cari</button>
+      </form>
+    </div>
+    <div class="hero mb-5 d-flex justify-content-center shadow">
+      <div class="metode-content m-5" style="width: 400px;">
+        <h1>Metode Daur Ulang</h1>
+        <p>Daur ulang sampah adalah proses mengubah bahan-bahan bekas atau limbah menjadi bahan yang dapat digunakan
+          kembali atau menjadi produk baru. Tujuan dari daur ulang sampah adalah untuk mengurangi jumlah sampah yang
+          masuk ke tempat pembuangan akhir (TPA) dan mengurangi dampak negatif lingkungan akibat pembuangan sampah yang
+          tidak terkendali.</p>
+      </div>
+      <div class="metode-img m-5">
+        <img src="assets/metode-img.jpg" alt="" width="400px">
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <div class="button-sections">
+        <button class="btn btn-outline-success btn-section me-3 active"
+          onclick="showSection('section1')">Plastik</button>
+        <button class="btn btn-outline-success btn-section me-3" onclick="showSection('section2')">Kaleng</button>
+        <button class="btn btn-outline-success btn-section me-3" onclick="showSection('section3')">Kardus</button>
+        <button class="btn btn-outline-success btn-section me-3" onclick="showSection('section4')">Kertas</button>
+        <button class="btn btn-outline-success btn-section me-3" onclick="showSection('section5')">Kaca</button>
+        <button class="btn btn-outline-success btn-section me-3" onclick="showSection('section6')">Elektronik</button>
+        <button class="btn btn-outline-success btn-section me-3" onclick="showSection('section7')">Organik</button>
+        <button class="btn btn-outline-success btn-section me-3" onclick="showSection('section8')">Lainnya</button>
+      </div>
+
+      <div id="section1" class="content-section mt-3">
+        <div class="section-hero p-4 d-flex flex-row shadow">
+          <img class="hero-img" src="assets/metode-icon/water-bottle.png" alt="ikon plastik">
+          <div class="hero-text ms-3">
+            <h3>Daur Ulang Plastik</h3>
+            <p>Sampah plastik merupakan salah satu jenis sampah yang memberikan ancaman serius terhadap lingkungan
+              karena selain jumlahnya cenderung semakin besar, kantong plastik adalah jenis sampah yang sulit terurai
+              oleh proses alam (non biodegradable) dan merupakan salah satu pencemar xenobiotik (pencemar yang tidak
+              dikenal oleh sistem biologis di lingkungan mengakibatkan senyawa pencemar terakumulasi di alam). Berikut
+              merupakan barang yang dapat dibuat dari sampah plastik.</p>
+          </div>
+        </div>
+        <div class="vid-section m-3 d-flex flex-wrap justify-content-center">
+          <script>
+            // ulang 5 card
+            for (let i = 0; i < 8; i++) {
+              document.write(`
+                <div class="card m-2" style="width: 350px;">
+                  <div class="card-body">
+                    <img class="rounded" src="http://img.youtube.com/vi/QauyjrKtlJE/0.jpg" alt="" width="315px">
+                    <h4 class="title-vid text-white mt-3"
+                        style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">Hiasan 17
+                        Agustus dari plastik kresek kerajinan yang mudah tanpa lem atau perekat</h4>
+                     <p class="text-decoration-none text-white">Cara membuat kerajinan tangan tempat peralatan dari bahan
+                        plastik yang tidak memakan banyak tempat dan waktu pembuatan</p>
+                     <a class="btn btn-light text-success" href="metode-vid.html">
+                        <h6>Cara Membuat</h6>
+                     </a>
+                  </div>
+                </div>
+                `);
+            }
+          </script>
+        </div>
+      </div>
+
+      <div id="section2" class="content-section mt-3" style="display: none;">
+        <div class="section-hero p-4 d-flex flex-row shadow">
+          <img class="hero-img" src="assets/metode-icon/metals.png" alt="ikon plastik">
+          <div class="hero-text ms-3">
+            <h3>Daur Ulang Kaleng</h3>
+            <p>Sampah plastik merupakan salah satu jenis sampah yang memberikan ancaman serius terhadap lingkungan
+              karena selain jumlahnya cenderung semakin besar, kantong plastik adalah jenis sampah yang sulit terurai
+              oleh proses alam (non biodegradable) dan merupakan salah satu pencemar xenobiotik (pencemar yang tidak
+              dikenal oleh sistem biologis di lingkungan mengakibatkan senyawa pencemar terakumulasi di alam). Berikut
+              merupakan barang yang dapat dibuat dari sampah plastik.</p>
+          </div>
+        </div>
+        <div class="vid-section mt-3 d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 350px;">
+            <div class="card-body">
+              <img class="rounded" src="http://img.youtube.com/vi/nOEGsG1Oc7E/0.jpg" alt="" width="315px">
+              <h4 class="title-vid text-white mt-3"
+                style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">Cara Membuat
+                Teko Dan Cangkir Dari Kaleng Bekas</h4>
+              <p class="text-decoration-none text-white">Cara membuat kerajinan tangan tempat peralatan dari bahan
+                kaleng yang tidak memakan banyak tempat dan waktu pembuatan</p>
+              <a class="btn btn-light text-success" href="metode-vid.html">
+                <h6>Cara Membuat</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="section3" class="content-section mt-3" style="display: none;">
+        <div class="section-hero p-4 d-flex flex-row shadow">
+          <img class="hero-img" src="assets/metode-icon/box.png" alt="ikon plastik">
+          <div class="hero-text ms-3">
+            <h3>Daur Ulang Kardus</h3>
+            <p>Sampah plastik merupakan salah satu jenis sampah yang memberikan ancaman serius terhadap lingkungan
+              karena selain jumlahnya cenderung semakin besar, kantong plastik adalah jenis sampah yang sulit terurai
+              oleh proses alam (non biodegradable) dan merupakan salah satu pencemar xenobiotik (pencemar yang tidak
+              dikenal oleh sistem biologis di lingkungan mengakibatkan senyawa pencemar terakumulasi di alam). Berikut
+              merupakan barang yang dapat dibuat dari sampah plastik.</p>
+          </div>
+        </div>
+        <div class="vid-section mt-3 d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 350px;">
+            <div class="card-body">
+              <img class="rounded" src="http://img.youtube.com/vi/lxBbJKS8gBw/0.jpg" alt="" width="315px">
+              <h4 class="title-vid text-white mt-3"
+                style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">DIY -
+                Organizer atas meja - Tempat pena atas meja</h4>
+              <p class="text-decoration-none text-white">Cara membuat kerajinan tangan tempat peralatan dari bahan
+                plastik yang tidak memakan banyak tempat dan waktu pembuatan</p>
+              <a class="btn btn-light text-success" href="metode-vid.html">
+                <h6>Cara Membuat</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="section4" class="content-section mt-3" style="display: none;">
+        <div class="section-hero p-4 d-flex flex-row shadow">
+          <img class="hero-img" src="assets/metode-icon/paper.png" alt="ikon plastik">
+          <div class="hero-text ms-3">
+            <h3>Daur Ulang Kertas</h3>
+            <p>Sampah plastik merupakan salah satu jenis sampah yang memberikan ancaman serius terhadap lingkungan
+              karena selain jumlahnya cenderung semakin besar, kantong plastik adalah jenis sampah yang sulit terurai
+              oleh proses alam (non biodegradable) dan merupakan salah satu pencemar xenobiotik (pencemar yang tidak
+              dikenal oleh sistem biologis di lingkungan mengakibatkan senyawa pencemar terakumulasi di alam). Berikut
+              merupakan barang yang dapat dibuat dari sampah plastik.</p>
+          </div>
+        </div>
+        <div class="vid-section mt-3 d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 350px;">
+            <div class="card-body">
+              <img class="rounded" src="http://img.youtube.com/vi/hJwuUcjFmQA/0.jpg" alt="" width="315px">
+              <h4 class="title-vid text-white mt-3"
+                style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">[ Origami ][
+                Kotak Kertas ][Cara Membuat Origami box ][ Kerajinan Tangan - Kreasi Kertas</h4>
+              <p class="text-decoration-none text-white">Cara membuat kerajinan tangan tempat peralatan dari bahan
+                plastik yang tidak memakan banyak tempat dan waktu pembuatan</p>
+              <a class="btn btn-light text-success" href="metode-vid.html">
+                <h6>Cara Membuat</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="section5" class="content-section mt-3" style="display: none;">
+        <div class="section-hero p-4 d-flex flex-row shadow">
+          <img class="hero-img" src="assets/metode-icon/bottle.png" alt="ikon plastik">
+          <div class="hero-text ms-3">
+            <h3>Daur Ulang Kaca</h3>
+            <p>Sampah plastik merupakan salah satu jenis sampah yang memberikan ancaman serius terhadap lingkungan
+              karena selain jumlahnya cenderung semakin besar, kantong plastik adalah jenis sampah yang sulit terurai
+              oleh proses alam (non biodegradable) dan merupakan salah satu pencemar xenobiotik (pencemar yang tidak
+              dikenal oleh sistem biologis di lingkungan mengakibatkan senyawa pencemar terakumulasi di alam). Berikut
+              merupakan barang yang dapat dibuat dari sampah plastik.</p>
+          </div>
+        </div>
+        <div class="vid-section mt-3 d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 350px;">
+            <div class="card-body">
+              <img class="rounded" src="http://img.youtube.com/vi/hJwuUcjFmQA/0.jpg" alt="" width="315px">
+              <h4 class="title-vid text-white mt-3"
+                style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">[ Origami ][
+                Kotak Kertas ][Cara Membuat Origami box ][ Kerajinan Tangan - Kreasi Kertas</h4>
+              <p class="text-decoration-none text-white">Cara membuat kerajinan tangan tempat peralatan dari bahan
+                plastik yang tidak memakan banyak tempat dan waktu pembuatan</p>
+              <a class="btn btn-light text-success" href="metode-vid.html">
+                <h6>Cara Membuat</h6>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="section6" class="content-section mt-3" style="display: none;">
+        <div class="section-hero p-4 d-flex flex-row shadow">
+          <img class="hero-img" src="assets/metode-icon/tv.png" alt="ikon plastik">
+          <div class="hero-text ms-3">
+            <h3>Daur Ulang Elektronik</h3>
+            <p>Sampah plastik merupakan salah satu jenis sampah yang memberikan ancaman serius terhadap lingkungan
+              karena selain jumlahnya cenderung semakin besar, kantong plastik adalah jenis sampah yang sulit terurai
+              oleh proses alam (non biodegradable) dan merupakan salah satu pencemar xenobiotik (pencemar yang tidak
+              dikenal oleh sistem biologis di lingkungan mengakibatkan senyawa pencemar terakumulasi di alam). Berikut
+              merupakan barang yang dapat dibuat dari sampah plastik.</p>
+          </div>
+        </div>
+      </div>
+      <div id="section7" class="content-section mt-3" style="display: none;">
+        <div class="section-hero p-4 d-flex flex-row shadow">
+          <img class="hero-img" src="assets/metode-icon/food 1.png" alt="ikon plastik">
+          <div class="hero-text ms-3">
+            <h3>Daur Ulang Organik</h3>
+            <p>Sampah plastik merupakan salah satu jenis sampah yang memberikan ancaman serius terhadap lingkungan
+              karena selain jumlahnya cenderung semakin besar, kantong plastik adalah jenis sampah yang sulit terurai
+              oleh proses alam (non biodegradable) dan merupakan salah satu pencemar xenobiotik (pencemar yang tidak
+              dikenal oleh sistem biologis di lingkungan mengakibatkan senyawa pencemar terakumulasi di alam). Berikut
+              merupakan barang yang dapat dibuat dari sampah plastik.</p>
+          </div>
+        </div>
+      </div>
+      <div id="section8" class="content-section mt-3" style="display: none;">
+        <div class="vid-section mt-3 d-flex flex-wrap justify-content-center">
+          <script>
+            // ulang 10 card
+            for (let i = 0; i < 10; i++) {
+                document.write(`
+                <div class="card m-2" style="width: 350px;">
+                  <div class="card-body">
+                    <img class="rounded" src="http://img.youtube.com/vi/hJwuUcjFmQA/0.jpg" alt="" width="315px">
+                    <h4 class="title-vid text-white mt-3"
+                        style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">[ Origami ][
+                        Kotak Kertas ][Cara Membuat Origami box ][ Kerajinan Tangan - Kreasi Kertas</h4>
+                    <p class="text-decoration-none text-white">Cara membuat kerajinan tangan tempat peralatan dari bahan
+                        plastik yang tidak memakan banyak tempat dan waktu pembuatan</p>
+                    <a class="btn btn-light text-success" href="metode-vid.html">
+                        <h6>Cara Membuat</h6>
+                    </a>
+                  </div>
+                </div>
+                `);
+            }
+        </script>
+        </div>
+      </div>
+  </main>
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+      <h3>
+        <center>Contact Us</center>
+      </h3>
+
+      <p class="footer-links">
+        <a href="index.html">Home</a>
+              |
+              <a href="jual-sampah.html">Sell Junk</a>
+              |
+              <a href="metode.html">Method</a>
+              |
+              <a href="shop.html">Shop</a>
+              |
+              <a href="Kontak.html">Contact Us</a>
+      </p>
+
+      <p class="footer-company-name"> Copyright @2023 All right reserved | Ideamen by Kelompok 18 </p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class=""></i>
+        <p><span></p>
+      </div>
+
+      <div>
+        <i class=""></i>
+        <p></p>
+      </div>
+      <div>
+        <i class=""></i>
+        <p><a href=""></a></p>
+      </div>
+
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span class="text-center">Recycle</span>
+        We offer training and skill building courses across Technology, Design, Management, Science and Humanities.
+      </p>
+      <div class="footer-icons" align="center">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    function showSection(sectionId) {
+      // Hide all content sections
+      $('.content-section').hide();
+      // Remove active class from all buttons
+      $('.btn-section').removeClass('active');
+      // Show the selected content section
+      $('#' + sectionId).show();
+      // Add active class to the clicked button
+      $('[onclick="showSection(\'' + sectionId + '\')"]').addClass('active');
+    }
+  </script>
+</body>
+
+</html>

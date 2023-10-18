@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recycle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <div class="menu-icon"><span class="fas fa-bars"></span></div>
+        <div class="logo">Ideamen</div>
+        <div class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jual-sampah.html">Sell</a></li>
+            <li><a href="metode.html">Method</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="Kontak.html">Contact Us</a></li>
+            <li><a href="login.html">Sign Up </a></li>
+        </div>
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <a href="troli.html"><i class='bx bxs-cart-alt' style="font-size: x-large; color: white;"></i></a>
+    </nav>
+
+
+    <main class="m-3">
+        <div class="step-jual-sampah d-flex justify-content-center">
+            <div id="homeShiping" class="step home-shiping">
+                <div class="card text-center mb-3" style="width: 700px;">
+                    <div class="card-body">
+                        <img src="assets/jual-sampah.png" alt="" height="300px">
+                        <h4 class="fw-bold">Jual SAMPAHMU</h4>
+                        <div class="content-step">
+                            <p>Dengan menjual sampah, kamu sudah berupaya untuk <span>mengurangi sampah dan melestarikan
+                                    alam</span>.</p>
+                            <p class="fst-italic"><span>Terima uang</span> hasil jual sampahmu <span>ketika petugas
+                                    datang</span> ke rumahmu.</p>
+                        </div>
+                        <button type="button" class="btn btn-success mt-3">MULAI</button>
+                    </div>
+                </div>
+            </div>
+            <div id="pilah" class="step pilah d-none">
+                <div class="card text-center mb-3" style="width: 700px;">
+                    <div class="card-body">
+                        <img src="assets/Garbage sorting set.jpg" alt="" height="300px">
+                        <h4 class="fw-bold">Pilah Sampah</h4>
+                        <div class="content-step">
+                            <p>Dalam memilah sampah, lakukan pengelompokan sampah sesuai jenisnya seperti <span>Organik,
+                                    Kertas, Plastik, Kaca, Metal,</span> dan <span>Elektronik</span>. Lalu
+                                <span>Kumpulkan</span> sesuai jenisnya dalam karung besar.</p>
+                        </div>
+                        <button type="button" class="btn btn-success mt-3">SELANJUTNYA</button>
+                    </div>
+                </div>
+            </div>
+            <div id="setLokasi" class="step set-lokasi d-none">
+                <div class="card text-center mb-3" style="width: 700px;">
+                    <div class="card-body">
+                        <img src="assets/loc-icon.png" alt="" height="100px">
+                        <h4 class="fw-bold">Atur Lokasi Penjemputan</h4>
+                        <div class="content-step d-flex justify-content-center">
+                            <form id="locationInput" action="">
+                                <select id="provinsi" class="form form-select" aria-label="Default select example">
+                                    <option selected>Provinsi</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <select id="Kabupaten" class="form form-select" aria-label="Default select example">
+                                    <option selected>Kabupaten</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <select id="Kecamatan" class="form form-select" aria-label="Default select example">
+                                    <option selected>Kecamatan</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <select id="desa" class="form form-select" aria-label="Default select example">
+                                    <option selected>Desa</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <div id="ket" class="form form-floating">
+                                    <textarea class="form-control"
+                                        placeholder="Berikan Keterangan Alamat Anda Seperti Nama Jalan, Gang, Nomor Rumah, Patokan, Warna Rumah dll."
+                                        id="floatingTextarea" style="height: 120px; width: 300px;"></textarea>
+                                    <label for="floatingTextarea">Keterangan Alamat</label>
+                                </div>
+                            </form>
+                        </div>
+                        <button type="button" class="btn btn-success mt-3">SELANJUTNYA</button>
+                    </div>
+                </div>
+            </div>
+            <div id="lacak" class="step lacak d-none">
+                <div class="card text-center mb-3" style="width: 700px;">
+                    <div class="card-body">
+                        <img src="assets/truk-sampah.png" alt="" height="150px">
+                        <h4 class="fw-bold">Perjalanan Pengambil Sampah</h4>
+                        <div class="content-step">
+                            <p>Status Terkini</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Tanggal</th>
+                                        <th scope="col">Keterangan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-success">
+                                        <td>17 Okt 2023 13:20:20</td>
+                                        <td>Dalam Perjalanan Menuju Tempat Anda</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17 Okt 2023 12:30:20</td>
+                                        <td>Dalam Perjalanan ke Desa xxx</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17 Okt 2023 11:00:20</td>
+                                        <td>Dalam Perjalanan ke Desa xx</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17 Okt 2023 09:20:20</td>
+                                        <td>Pesanan Diterima</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <button type="button" class="btn btn-success mt-3">SELESAI</button>
+                    </div>
+                </div>
+            </div>
+            <div id="done" class="step done d-none">
+                <div class="card text-center mb-3" style="width: 700px;">
+                    <div class="card-body">
+                        <i class='bx bxs-check-circle' style="font-size: 200px; color: #237723;"></i>
+                        <h4 class="fw-bold">Jual Sampah Selesai</h4>
+                        <div class="content-step">
+                            <p>Kamu Telah Mengurangi Sampah, Kami Berikan Pujian padamu!</p>
+                        </div>
+                        <a href="index.html" class="btn btn-success mt-3">HOME</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>
+                <center>Contact Us</center>
+            </h3>
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                |
+                <a href="jual-sampah.html">Sell Junk</a>
+                |
+                <a href="metode.html">Method</a>
+                |
+                <a href="shop.html">Shop</a>
+                |
+                <a href="Kontak.html">Contact Us</a>
+            </p>
+
+            <p class="footer-company-name"> Copyright @2023 All right reserved | Ideamen by Kelompok 18 </p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class=""></i>
+                <p><span></p>
+            </div>
+
+            <div>
+                <i class=""></i>
+                <p></p>
+            </div>
+            <div>
+                <i class=""></i>
+                <p><a href=""></a></p>
+            </div>
+
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span class="text-center">Recycle</span>
+                We offer training and skill building courses across Technology, Design, Management, Science and
+                Humanities.
+            </p>
+            <div class="footer-icons" align="center">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script>
+        const mulaiButton = document.querySelector('#homeShiping button');
+        const pilahButton = document.querySelector('#pilah button');
+        const setLokasiButton = document.querySelector('#setLokasi button');
+        const lacakButton = document.querySelector('#lacak button');
+
+        const homeShipingStep = document.getElementById('homeShiping');
+        const pilahStep = document.getElementById('pilah');
+        const setLokasiStep = document.getElementById('setLokasi');
+        const lacakStep = document.getElementById('lacak');
+        const doneStep = document.getElementById('done');
+
+        mulaiButton.addEventListener('click', () => {
+            homeShipingStep.classList.add('d-none');
+            pilahStep.classList.remove('d-none');
+        });
+
+        pilahButton.addEventListener('click', () => {
+            pilahStep.classList.add('d-none');
+            setLokasiStep.classList.remove('d-none');
+        });
+
+        setLokasiButton.addEventListener('click', () => {
+            setLokasiStep.classList.add('d-none');
+            lacakStep.classList.remove('d-none');
+        });
+
+        lacakButton.addEventListener('click', () => {
+            lacakStep.classList.add('d-none');
+            doneStep.classList.remove('d-none');
+        });
+    </script>
+</body>
+
+</html>

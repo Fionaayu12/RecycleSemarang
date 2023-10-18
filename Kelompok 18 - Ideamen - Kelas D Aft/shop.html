@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/glider.min.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+    <nav>
+        <div class="menu-icon"><span class="fas fa-bars"></span></div>
+        <div class="logo">Ideamen</div>
+        <div class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jual-sampah.html">Sell</a></li>
+            <li><a href="metode.html">Method</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="Kontak.html">Contact Us</a></li>
+            <li><a href="login.html">Sign Up </a></li>
+        </div>
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <a href="troli.html"><i class='bx bxs-cart-alt' style="font-size: x-large; color: white;"></i></a>
+    </nav>
+
+    <div class="judul">
+        <h2>Top Product</h2>
+    </div>
+
+    <div class="container2">
+
+        <div class="glider-contain">
+            <button class="glider-prev">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+    
+            <div class="glider">   
+                <div class="gambar"> 
+                    <img src="images/shop/Rectangle 28-4.png">
+                </div>   
+                <div class="gambar">
+                    <img src="images/shop/Group 478.png">
+                </div>   
+                <div class="gambar"> 
+                    <img src="images/shop/Rectangle 28-3.png">
+                </div>
+				<div class="gambar"> 
+                    <img src="images/shop/Rectangle 28-2.png">
+                </div>  
+            </div>
+    
+            <button class="glider-next">
+                <i class="fa fa-chevron-right"></i>
+            </button>
+            
+            <div id="dots" class="glider-dots"></div>
+        </div>
+        <div class="sellProduct">
+            <h1 class="sell">Want to sell</h1>
+            <h1 class="sell2">Your own product?</h1>
+            <center><a href="sell.html">Sell Product</a></center>
+        </div>
+    </div>
+
+    <div class="judul2">
+        <h2>Recomended for you</h2>
+    </div>
+
+    <div class="container3">
+        <div class="glider-contain multiple d-flex justify-content-between">
+            <div class="gambar">
+                <img src="images/shop/rekomendasi/Group 485.png">
+            </div>
+            <div class="gambar">
+                <img src="images/shop/rekomendasi/Group 486.png">
+            </div>
+            <div class="gambar">
+                <img src="images/shop/rekomendasi/Rectangle 28-1.png">
+            </div>
+            <div class="gambar">
+                <img src="images/shop/rekomendasi/Rectangle 28-2.png">
+            </div>
+        </div>
+    </div>
+    <div class="sellProduct">
+        <center><a href="belanja.html">More Product</a></center>
+    </div>
+
+    <div class="judul3">
+        <h2>New Product</h2>
+    </div>
+
+    <div class="container4">
+        <div class="glider-contain multiple d-flex justify-content-between">
+            <div class="gambar">
+                <img src="images/shop/rekomendasi/Group 479.png">
+            </div>
+            <div class="gambar">
+                <img src="images/shop/rekomendasi/Group 480.png">
+            </div>
+            <div class="gambar">
+                <img src="images/shop/rekomendasi/Group 481.png">
+            </div>
+            <div class="gambar">
+                <img src="images/shop/rekomendasi/Group 483.png">
+            </div>
+        </div>
+    </div>
+    <div class="sellProduct">
+        <center><a href="belanja.html">More Product</a></center>
+    </div>
+
+
+    <script src="glider.min.js"></script>
+
+    <script>
+        new Glider(document.querySelector(".glider"), {
+            slidesToShow: "1",
+            draggable: true,
+            dots: "#dots",
+            arrows: {
+                prev: ".glider-prev",
+                next: ".glider-next"
+            }
+        })
+    </script>
+
+    <script>
+        new Glider(document.querySelector(".glider2"), {
+            slidesToShow: "4",
+            draggable: true,
+            dots: "#dots2",
+            
+        })
+    </script>
+
+    <script>
+        new Glider(document.querySelector(".glider3"), {
+            slidesToShow: "4",
+            draggable: true,
+            dots: "#dots3",
+            
+        })
+    </script>
+
+    <script>
+        function openNav() {
+          document.getElementById("nav").style.width = "50%";
+        }
+        
+        function closeNav() {
+          document.getElementById("nav").style.width = "0";
+        }
+    </script>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3><center>Contact Us</center></h3>
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                |
+                <a href="jual-sampah.html">Sell Junk</a>
+                |
+                <a href="metode.html">Method</a>
+                |
+                <a href="shop.html">Shop</a>
+                |
+                <a href="Kontak.html">Contact Us</a>
+            </p>
+
+            <p class="footer-company-name"> Copyright @2023 All right reserved  | Ideamen by Kelompok 18 </p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class=""></i>
+                  <p><span></p>
+            </div>
+
+            <div>
+                <i class=""></i>
+                <p></p>
+            </div>
+            <div>
+                <i class=""></i>
+                <p><a href=""></a></p>
+            </div>
+
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Recycle</span>
+                We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p>
+            <div class="footer-icons" align="center">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(".gallery").magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery:{
+                enabled: true
+            }
+        });
+    </script>
+
+    <script>
+        function openNav() {
+          document.getElementById("nav").style.width = "50%";
+        }
+        
+        function closeNav() {
+          document.getElementById("nav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
